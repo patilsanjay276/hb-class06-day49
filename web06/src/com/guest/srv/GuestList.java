@@ -48,7 +48,7 @@ public class GuestList extends HttpServlet{
 			rs=stmt.executeQuery("select * from guest");
 			while(rs.next()){
 				out.println("<tr>");
-				out.println("<td>"+rs.getInt("sabun")+"</td>");
+				out.println("<td><a href=\"detail.naver?idx="+rs.getInt("sabun")+"\">"+rs.getInt("sabun")+"</a></td>");
 				out.println("<td>"+rs.getString("name")+"</td>");
 				out.println("<td>"+rs.getDate("nalja")+"</td>");
 				out.println("<td>"+rs.getInt("pay")+"</td>");
@@ -66,6 +66,7 @@ public class GuestList extends HttpServlet{
 			}
 		}
 		out.println("</table>");
+		out.println("<p><a href=\"addform.html\">[입  력]</a></p>");
 		out.println("</body>");
 		out.println("</html>");
 	}

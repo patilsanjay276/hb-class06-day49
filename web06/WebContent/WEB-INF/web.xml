@@ -11,6 +11,46 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>list</servlet-name>
-  	<url-pattern>/list.html</url-pattern>
+  	<url-pattern>/list.naver</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>add</servlet-name>
+  	<servlet-class>com.guest.srv.InsertOne</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>add</servlet-name>
+  	<url-pattern>/insert.naver</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>detail</servlet-name>
+  	<servlet-class>com.guest.srv.ListOne</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>detail</servlet-name>
+  	<url-pattern>/detail.naver</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>edit</servlet-name>
+  	<servlet-class>com.guest.srv.EditOne</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>edit</servlet-name>
+  	<url-pattern>/edit.naver</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>update</servlet-name>
+  	<servlet-class>com.guest.srv.UpdateOne</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update</servlet-name>
+  	<url-pattern>/update.naver</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>delete</servlet-name>
+  	<servlet-class>com.guest.srv.DeleteOne</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete</servlet-name>
+  	<url-pattern>/delete.naver</url-pattern>
   </servlet-mapping>
 </web-app>
